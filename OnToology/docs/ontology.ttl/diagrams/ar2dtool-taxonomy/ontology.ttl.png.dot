@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Origin" "base:Qatar_Airways" "base:Staff" "base:OverallRating" "base:LowSatisfaction" "base:HighSatisfaction" "base:Aircraft" "base:TypeOfTraveller" "base:Flight" "base:CabinStaff" "base:Airline" "base:SeatType" "base:Airbus_A380" "base:ValueForMoney" "base:Date" "base:CompanyName" "base:Boeing_777-200Lr" "base:Ryanair" "base:Boeing_737" "base:Passenger" "base:Destination" "base:StaffRating" "base:MediumSatisfaction" "base:FlightSatisfaction" "base:FlightRating" "base:Boeing_737-800" ; /*classes style*/
+	"base:Staff" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:Origin" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:MediumSatisfaction" -> "base:FlightSatisfaction" [ label = "rdfs:subClassOf" ];
+	"base:Destination" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:CompanyName" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:CabinStaff" -> "base:Staff" [ label = "rdfs:subClassOf" ];
+	"base:Qatar_Airways" -> "base:CompanyName" [ label = "rdfs:subClassOf" ];
+	"base:SeatType" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:LowSatisfaction" -> "base:FlightSatisfaction" [ label = "rdfs:subClassOf" ];
+	"base:FlightSatisfaction" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Boeing_777-200Lr" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:HighSatisfaction" -> "base:FlightSatisfaction" [ label = "rdfs:subClassOf" ];
+	"base:FlightRating" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:OverallRating" -> "base:FlightRating" [ label = "rdfs:subClassOf" ];
+	"base:Boeing_737" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:Flight" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:Ryanair" -> "base:CompanyName" [ label = "rdfs:subClassOf" ];
+	"base:ValueForMoney" -> "base:FlightRating" [ label = "rdfs:subClassOf" ];
+	"base:Boeing_737-800" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:Airbus_A380" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:Date" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:TypeOfTraveller" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:StaffRating" -> "base:CabinStaff" [ label = "rdfs:subClassOf" ];
+	"base:Aircraft" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+
+}

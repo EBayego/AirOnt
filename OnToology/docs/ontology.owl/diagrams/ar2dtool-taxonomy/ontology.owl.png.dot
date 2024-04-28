@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "AirlineOntology:Origin" "AirlineOntology:Qatar_Airways" "AirlineOntology:Staff" "AirlineOntology:OverallRating" "AirlineOntology:LowSatisfaction" "AirlineOntology:HighSatisfaction" "AirlineOntology:Aircraft" "AirlineOntology:TypeOfTraveller" "AirlineOntology:Flight" "AirlineOntology:CabinStaff" "AirlineOntology:Airline" "AirlineOntology:SeatType" "AirlineOntology:Airbus_A380" "AirlineOntology:ValueForMoney" "AirlineOntology:Date" "AirlineOntology:CompanyName" "AirlineOntology:Boeing_777-200Lr" "AirlineOntology:Ryanair" "AirlineOntology:Boeing_737" "AirlineOntology:Passenger" "AirlineOntology:Destination" "AirlineOntology:StaffRating" "AirlineOntology:MediumSatisfaction" "AirlineOntology:FlightSatisfaction" "AirlineOntology:FlightRating" "AirlineOntology:Boeing_737-800" ; /*classes style*/
+	"AirlineOntology:Staff" -> "AirlineOntology:Airline" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Origin" -> "AirlineOntology:Flight" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:MediumSatisfaction" -> "AirlineOntology:FlightSatisfaction" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Destination" -> "AirlineOntology:Flight" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:CompanyName" -> "AirlineOntology:Airline" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:CabinStaff" -> "AirlineOntology:Staff" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Qatar_Airways" -> "AirlineOntology:CompanyName" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:SeatType" -> "AirlineOntology:Passenger" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:LowSatisfaction" -> "AirlineOntology:FlightSatisfaction" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:FlightSatisfaction" -> "AirlineOntology:Flight" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Boeing_777-200Lr" -> "AirlineOntology:Aircraft" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:HighSatisfaction" -> "AirlineOntology:FlightSatisfaction" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:FlightRating" -> "AirlineOntology:Flight" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:OverallRating" -> "AirlineOntology:FlightRating" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Boeing_737" -> "AirlineOntology:Aircraft" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Flight" -> "AirlineOntology:Airline" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Ryanair" -> "AirlineOntology:CompanyName" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:ValueForMoney" -> "AirlineOntology:FlightRating" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Boeing_737-800" -> "AirlineOntology:Aircraft" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Airbus_A380" -> "AirlineOntology:Aircraft" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Date" -> "AirlineOntology:Flight" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:TypeOfTraveller" -> "AirlineOntology:Passenger" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:StaffRating" -> "AirlineOntology:CabinStaff" [ label = "rdfs:subClassOf" ];
+	"AirlineOntology:Aircraft" -> "AirlineOntology:Airline" [ label = "rdfs:subClassOf" ];
+
+}
