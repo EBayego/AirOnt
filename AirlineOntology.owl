@@ -325,6 +325,26 @@
         <NamedIndividual IRI="#Flight2"/>
         <NamedIndividual IRI="#Qatar"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasComment"/>
+        <NamedIndividual IRI="#Flight1"/>
+        <Literal>Another good affordable flight with Ryanair. On time, pleasant staff at check-in and on board. We use Ryanair as our first choice on every flight we take.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeatComfort"/>
+        <NamedIndividual IRI="#Flight1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasComment"/>
+        <NamedIndividual IRI="#Flight2"/>
+        <Literal>My last travel in January 2024 the food quality and presentation had deteriorated and the service. During  booking one has to pay for seats in case one does not want to wait until check-in. On the first leg the crew mechanically did their job. It is ok, but not what you expect from Qatar Airways. Amenity kits are not provided any longer on every flight during the night. Nonetheless you sometimes still find the old welcoming and service oriented Qatar Airways spirit. The crew on the second leg was outstanding as well as ground staff at JRO. Flying Qatar Airways is still a good value for money, but it was not the extraordinary experience.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFoodandBeverages"/>
+        <NamedIndividual IRI="#Flight2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.4</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasAircraft"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -451,79 +471,6 @@
             </FacetRestriction>
         </DatatypeRestriction>
     </DataPropertyRange>
-    <DLSafeRule>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#OverallRating"/>
-                <Variable IRI="urn:swrl:var#o"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasValue"/>
-                <Variable IRI="urn:swrl:var#o"/>
-                <Variable IRI="urn:swrl:var#r"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="urn:swrl:var#r"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
-                <Variable IRI="urn:swrl:var#r"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.0</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#HighSatisfaction"/>
-                <Variable IRI="urn:swrl:var#o"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#OverallRating"/>
-                <Variable IRI="urn:swrl:var#o"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasValue"/>
-                <Variable IRI="urn:swrl:var#o"/>
-                <Variable IRI="urn:swrl:var#r"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="urn:swrl:var#r"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.0</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#HighSatisfaction"/>
-                <Variable IRI="urn:swrl:var#o"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#OverallRating"/>
-                <Variable IRI="urn:swrl:var#o"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasValue"/>
-                <Variable IRI="urn:swrl:var#o"/>
-                <Variable IRI="urn:swrl:var#r"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
-                <Variable IRI="urn:swrl:var#r"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#LowSatisfaction"/>
-                <Variable IRI="urn:swrl:var#o"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Airbus_A380</IRI>
