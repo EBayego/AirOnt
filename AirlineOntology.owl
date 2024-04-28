@@ -112,7 +112,7 @@
         <DataProperty IRI="#hasValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasFood&amp;Beverages"/>
+        <DataProperty IRI="#hasFoodandBeverages"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Boeing737_1"/>
@@ -341,7 +341,7 @@
         <Literal>My last travel in January 2024 the food quality and presentation had deteriorated and the service. During  booking one has to pay for seats in case one does not want to wait until check-in. On the first leg the crew mechanically did their job. It is ok, but not what you expect from Qatar Airways. Amenity kits are not provided any longer on every flight during the night. Nonetheless you sometimes still find the old welcoming and service oriented Qatar Airways spirit. The crew on the second leg was outstanding as well as ground staff at JRO. Flying Qatar Airways is still a good value for money, but it was not the extraordinary experience.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasFood&amp;Beverages"/>
+        <DataProperty IRI="#hasFoodandBeverages"/>
         <NamedIndividual IRI="#Flight2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.4</Literal>
     </DataPropertyAssertion>
@@ -418,7 +418,7 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasFood&amp;Beverages"/>
+        <DataProperty IRI="#hasFoodandBeverages"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
@@ -434,7 +434,7 @@
         <Class IRI="#OverallRating"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasFood&amp;Beverages"/>
+        <DataProperty IRI="#hasFoodandBeverages"/>
         <Class IRI="#FlightRating"/>
     </DataPropertyDomain>
     <DataPropertyRange>
@@ -466,7 +466,7 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasFood&amp;Beverages"/>
+        <DataProperty IRI="#hasFoodandBeverages"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:decimal"/>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -897,13 +897,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasFood&amp;Beverages</IRI>
+        <IRI>#hasFoodandBeverages</IRI>
         <Literal>Represents the rating of food and beverages of the flight.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasFood&amp;Beverages</IRI>
-        <Literal>hasFood&amp;Beverages</Literal>
+        <IRI>#hasFoodandBeverages</IRI>
+        <Literal>hasFoodandBeverages</Literal>
     </AnnotationAssertion>
 </Ontology>
 
