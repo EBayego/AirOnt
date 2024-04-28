@@ -13,7 +13,7 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#A380"/>
+        <Class IRI="#Airbus_A380"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Aircraft"/>
@@ -22,13 +22,13 @@
         <Class IRI="#Airline"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Boeing737"/>
+        <Class IRI="#Boeing_737"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Boeing737-800"/>
+        <Class IRI="#Boeing_737-800"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Boeing777-200Lr"/>
+        <Class IRI="#Boeing_777-200Lr"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CabinStaff"/>
@@ -44,6 +44,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Flight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlightRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlightSatisfaction"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HighSatisfaction"/>
@@ -64,16 +70,10 @@
         <Class IRI="#Passenger"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#QatarAirways"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rating"/>
+        <Class IRI="#Qatar_Airways"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ryanair"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Satisfaction"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SeatType"/>
@@ -139,7 +139,7 @@
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#A380"/>
+        <Class IRI="#Airbus_A380"/>
         <Class IRI="#Aircraft"/>
     </SubClassOf>
     <SubClassOf>
@@ -147,15 +147,15 @@
         <Class IRI="#Airline"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Boeing737"/>
+        <Class IRI="#Boeing_737"/>
         <Class IRI="#Aircraft"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Boeing737-800"/>
+        <Class IRI="#Boeing_737-800"/>
         <Class IRI="#Aircraft"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Boeing777-200Lr"/>
+        <Class IRI="#Boeing_777-200Lr"/>
         <Class IRI="#Aircraft"/>
     </SubClassOf>
     <SubClassOf>
@@ -193,16 +193,24 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FlightRating"/>
+        <Class IRI="#Flight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlightSatisfaction"/>
+        <Class IRI="#Flight"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HighSatisfaction"/>
-        <Class IRI="#Satisfaction"/>
+        <Class IRI="#FlightSatisfaction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowSatisfaction"/>
-        <Class IRI="#Satisfaction"/>
+        <Class IRI="#FlightSatisfaction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MediumSatisfaction"/>
-        <Class IRI="#Satisfaction"/>
+        <Class IRI="#FlightSatisfaction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Origin"/>
@@ -210,23 +218,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OverallRating"/>
-        <Class IRI="#Rating"/>
+        <Class IRI="#FlightRating"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#QatarAirways"/>
+        <Class IRI="#Qatar_Airways"/>
         <Class IRI="#CompanyName"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rating"/>
-        <Class IRI="#Flight"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Ryanair"/>
         <Class IRI="#CompanyName"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Satisfaction"/>
-        <Class IRI="#Flight"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SeatType"/>
@@ -246,13 +246,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ValueForMoney"/>
-        <Class IRI="#Rating"/>
+        <Class IRI="#FlightRating"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#A380"/>
-        <Class IRI="#Boeing737"/>
-        <Class IRI="#Boeing737-800"/>
-        <Class IRI="#Boeing777-200Lr"/>
+        <Class IRI="#Airbus_A380"/>
+        <Class IRI="#Boeing_737"/>
+        <Class IRI="#Boeing_737-800"/>
+        <Class IRI="#Boeing_777-200Lr"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Airline"/>
@@ -264,11 +264,11 @@
         <Class IRI="#MediumSatisfaction"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#QatarAirways"/>
+        <Class IRI="#Qatar_Airways"/>
         <Class IRI="#Ryanair"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Boeing737"/>
+        <Class IRI="#Boeing_737"/>
         <NamedIndividual IRI="#Boeing737_1"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -288,7 +288,7 @@
         <NamedIndividual IRI="#Pass2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#QatarAirways"/>
+        <Class IRI="#Qatar_Airways"/>
         <NamedIndividual IRI="#Qatar"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -423,11 +423,11 @@
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#hasComment"/>
-        <Class IRI="#Rating"/>
+        <Class IRI="#FlightRating"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasSeatComfort"/>
-        <Class IRI="#Rating"/>
+        <Class IRI="#FlightRating"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasValue"/>
@@ -435,7 +435,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasFood&amp;Beverages"/>
-        <Class IRI="#Rating"/>
+        <Class IRI="#FlightRating"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasComment"/>
@@ -552,17 +552,17 @@
     </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#A380</IRI>
+        <IRI>#Airbus_A380</IRI>
         <Literal>Represents an Airbus A380 aircraft model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#A380</IRI>
+        <IRI>#Airbus_A380</IRI>
         <Literal>Airbus_A380</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#A380</IRI>
+        <IRI>#Airbus_A380</IRI>
         <Literal>https://dbpedia.org/page/Airbus_A380</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -587,47 +587,47 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Boeing737</IRI>
+        <IRI>#Boeing_737</IRI>
         <Literal>Represents a Boeing 737 aircraft model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Boeing737</IRI>
+        <IRI>#Boeing_737</IRI>
         <Literal>Boeing_737</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Boeing737</IRI>
+        <IRI>#Boeing_737</IRI>
         <Literal>https://dbpedia.org/page/Boeing_737</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Boeing737-800</IRI>
+        <IRI>#Boeing_737-800</IRI>
         <Literal>Represents a specific variant of the Boeing 737 aircraft, the Boeing 737-800 model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Boeing737-800</IRI>
+        <IRI>#Boeing_737-800</IRI>
         <Literal>Boeing_737-800</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Boeing737-800</IRI>
+        <IRI>#Boeing_737-800</IRI>
         <Literal>https://es.dbpedia.org/page/Boeing_737_Next_Generation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Boeing777-200Lr</IRI>
+        <IRI>#Boeing_777-200Lr</IRI>
         <Literal>Represents a specific variant of the Boeing 777 aircraft, the Boeing 777-200LR model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Boeing777-200Lr</IRI>
+        <IRI>#Boeing_777-200Lr</IRI>
         <Literal>Boeing_777-200LR</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Boeing777-200Lr</IRI>
+        <IRI>#Boeing_777-200Lr</IRI>
         <Literal>https://dbpedia.org/page/Boeing_777</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -648,7 +648,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CompanyName</IRI>
-        <Literal>Company Name</Literal>
+        <Literal>CompanyName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -679,6 +679,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Flight</IRI>
         <Literal>Flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlightRating</IRI>
+        <Literal>Represents the rating associated with a flight experience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlightRating</IRI>
+        <Literal>FlightRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlightSatisfaction</IRI>
+        <Literal>Represents the satisfaction level of the flight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlightSatisfaction</IRI>
+        <Literal>FlightSatisfaction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -742,23 +762,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#QatarAirways</IRI>
+        <IRI>#Qatar_Airways</IRI>
         <Literal>Represents the airline company Qatar Airways.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#QatarAirways</IRI>
+        <IRI>#Qatar_Airways</IRI>
         <Literal>Qatar_Airways</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Rating</IRI>
-        <Literal>Represents the rating associated with a flight experience</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Rating</IRI>
-        <Literal>FlightRating</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -774,16 +784,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
         <IRI>#Ryanair</IRI>
         <Literal>https://dbpedia.org/page/Ryanair</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Satisfaction</IRI>
-        <Literal>Represents the satisfaction level of the flight.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Satisfaction</IRI>
-        <Literal>FlightSatisfaction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
