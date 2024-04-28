@@ -106,13 +106,13 @@
         <DataProperty IRI="#hasComment"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasFoodandBeverages"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasSeatComfort"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasValue"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasFoodandBeverages"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Boeing737_1"/>
@@ -361,12 +361,6 @@
         <ObjectProperty IRI="#has_company"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasAircraft"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#has_company"/>
-    </FunctionalObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasAircraft"/>
     </AsymmetricObjectProperty>
@@ -410,6 +404,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#hasFoodandBeverages"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#hasSeatComfort"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -417,12 +415,12 @@
         <DataProperty IRI="#hasValue"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasFoodandBeverages"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#hasComment"/>
+        <Class IRI="#FlightRating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFoodandBeverages"/>
         <Class IRI="#FlightRating"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -433,13 +431,21 @@
         <DataProperty IRI="#hasValue"/>
         <Class IRI="#OverallRating"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasFoodandBeverages"/>
-        <Class IRI="#FlightRating"/>
-    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasComment"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFoodandBeverages"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasSeatComfort"/>
@@ -455,18 +461,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasValue"/>
-        <DatatypeRestriction>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
-            </FacetRestriction>
-            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.0</Literal>
-            </FacetRestriction>
-        </DatatypeRestriction>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasFoodandBeverages"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:decimal"/>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -867,6 +861,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFoodandBeverages</IRI>
+        <Literal>Represents the rating of food and beverages of the flight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFoodandBeverages</IRI>
+        <Literal>hasFoodandBeverages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasPassenger</IRI>
         <Literal>This property relates a flight to the passenger.</Literal>
     </AnnotationAssertion>
@@ -894,16 +898,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#has_company</IRI>
         <Literal>hasCompany</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasFoodandBeverages</IRI>
-        <Literal>Represents the rating of food and beverages of the flight.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasFoodandBeverages</IRI>
-        <Literal>hasFoodandBeverages</Literal>
     </AnnotationAssertion>
 </Ontology>
 
