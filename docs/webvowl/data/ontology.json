@@ -19,37 +19,43 @@
     "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "46",
     "type" : "owl:Class"
   }, {
     "id" : "11",
     "type" : "owl:Class"
   }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "47",
+    "id" : "53",
     "type" : "rdfs:Literal"
   }, {
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "47",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "26",
     "type" : "owl:Thing"
   }, {
     "id" : "9",
@@ -58,49 +64,43 @@
     "id" : "7",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "50",
+    "id" : "56",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "28",
+    "id" : "35",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "32",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "24",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "16",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
     "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -143,6 +143,26 @@
     },
     "id" : "10"
   }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QatarAirways",
+      "undefined" : "QatarAirways"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar",
+      "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+      "labels" : {
+        "IRI-based" : "Qatar"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the airline company Qatar Airways."
+    },
+    "id" : "14",
+    "superClasses" : [ "11" ]
+  }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#LowSatisfaction",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
     "instances" : 0,
@@ -153,43 +173,29 @@
     "comment" : {
       "undefined" : "Represents a low level of satisfaction of the flight."
     },
-    "id" : "14",
+    "id" : "15",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_737-800",
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
     "instances" : 0,
     "annotations" : {
       "sameAs" : [ {
         "identifier" : "sameAs",
         "language" : "undefined",
-        "value" : "https://es.dbpedia.org/page/Boeing_737_Next_Generation",
+        "value" : "https://dbpedia.org/page/Boeing_777",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "Boeing_737-800",
-      "undefined" : "Boeing_737-800"
+      "IRI-based" : "Boeing777-200LR",
+      "undefined" : "Boeing777-200LR"
     },
     "comment" : {
-      "undefined" : "Represents a specific variant of the Boeing 737 aircraft, the Boeing 737-800 model."
+      "undefined" : "Represents a specific variant of the Boeing 777 aircraft, the Boeing 777-200LR model."
     },
-    "id" : "37",
+    "id" : "46",
     "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction",
-    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FlightSatisfaction",
-      "undefined" : "FlightSatisfaction"
-    },
-    "subClasses" : [ "0", "14", "32" ],
-    "comment" : {
-      "undefined" : "Represents the satisfaction level of the flight."
-    },
-    "id" : "1",
-    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
@@ -198,12 +204,26 @@
       "IRI-based" : "CompanyName",
       "undefined" : "CompanyName"
     },
-    "subClasses" : [ "30", "35" ],
+    "subClasses" : [ "14", "44" ],
     "comment" : {
       "undefined" : "Represents the name of the airline company."
     },
     "id" : "11",
     "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightSatisfaction",
+      "undefined" : "FlightSatisfaction"
+    },
+    "subClasses" : [ "0", "15", "40" ],
+    "comment" : {
+      "undefined" : "Represents the satisfaction level of the flight."
+    },
+    "id" : "1",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
@@ -225,11 +245,46 @@
         "IRI-based" : "Flight2"
       }
     } ],
-    "subClasses" : [ "1", "20", "6", "3", "41" ],
+    "subClasses" : [ "1", "22", "6", "3", "47" ],
     "comment" : {
       "undefined" : "Represents a flight operated by an airline."
     },
     "id" : "4",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://es.dbpedia.org/page/Boeing737_Next_Generation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Boeing737-800",
+      "undefined" : "Boeing737-800"
+    },
+    "comment" : {
+      "undefined" : "Represents a specific variant of the Boeing 737 aircraft, the Boeing 737-800 model."
+    },
+    "id" : "48",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Staff",
+      "undefined" : "Staff"
+    },
+    "subClasses" : [ "17" ],
+    "comment" : {
+      "undefined" : "Represents the staff members of an airline."
+    },
+    "id" : "12",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#ValueForMoney",
@@ -242,22 +297,8 @@
     "comment" : {
       "undefined" : "Represents the rating of value for money aspect of a flight experience."
     },
-    "id" : "42",
+    "id" : "49",
     "superClasses" : [ "6" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff",
-    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Staff",
-      "undefined" : "Staff"
-    },
-    "subClasses" : [ "16" ],
-    "comment" : {
-      "undefined" : "Represents the staff members of an airline."
-    },
-    "id" : "12",
-    "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
@@ -266,7 +307,7 @@
       "IRI-based" : "Aircraft",
       "undefined" : "Aircraft"
     },
-    "subClasses" : [ "43", "44", "45", "37" ],
+    "subClasses" : [ "46", "50", "48", "51" ],
     "comment" : {
       "undefined" : "Represents an aircraft used in the flight."
     },
@@ -274,7 +315,7 @@
     "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "47",
+    "id" : "53",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -303,12 +344,12 @@
     "comment" : {
       "undefined" : "Represents the destination airport of a flight."
     },
-    "id" : "41",
+    "id" : "47",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "21",
+    "id" : "26",
     "label" : {
       "undefined" : "Thing"
     }
@@ -333,7 +374,7 @@
         "IRI-based" : "Pass1"
       }
     } ],
-    "subClasses" : [ "8", "49" ],
+    "subClasses" : [ "8", "55" ],
     "comment" : {
       "undefined" : "Represents a passenger traveling on a flight."
     },
@@ -347,14 +388,14 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "50",
+    "id" : "56",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "28",
+    "id" : "35",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -370,7 +411,7 @@
     "comment" : {
       "undefined" : "Represents a high level of satisfaction of the flight."
     },
-    "id" : "32",
+    "id" : "40",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#TypeOfTraveller",
@@ -383,12 +424,12 @@
     "comment" : {
       "undefined" : "Represents the type or category of the passenger (for example business, leisure...)"
     },
-    "id" : "49",
+    "id" : "55",
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "26",
+    "id" : "24",
     "label" : {
       "IRI-based" : "string"
     }
@@ -400,11 +441,11 @@
       "IRI-based" : "CabinStaff",
       "undefined" : "CabinStaff"
     },
-    "subClasses" : [ "53" ],
+    "subClasses" : [ "59" ],
     "comment" : {
       "undefined" : "Represents the cabin crew members of an airline."
     },
-    "id" : "16",
+    "id" : "17",
     "superClasses" : [ "12" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating",
@@ -414,32 +455,12 @@
       "IRI-based" : "FlightRating",
       "undefined" : "FlightRating"
     },
-    "subClasses" : [ "54", "42" ],
+    "subClasses" : [ "60", "49" ],
     "comment" : {
       "undefined" : "Represents the rating associated with a flight experience"
     },
     "id" : "6",
     "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar_Airways",
-    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Qatar_Airways",
-      "undefined" : "Qatar_Airways"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar",
-      "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-      "labels" : {
-        "IRI-based" : "Qatar"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "Represents the airline company Qatar Airways."
-    },
-    "id" : "30",
-    "superClasses" : [ "11" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
@@ -451,50 +472,8 @@
     "comment" : {
       "undefined" : "Represents the overall rating of a flight experience."
     },
-    "id" : "54",
+    "id" : "60",
     "superClasses" : [ "6" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airbus_A380",
-    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "instances" : 0,
-    "annotations" : {
-      "sameAs" : [ {
-        "identifier" : "sameAs",
-        "language" : "undefined",
-        "value" : "https://dbpedia.org/page/Airbus_A380",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Airbus_A380",
-      "undefined" : "Airbus_A380"
-    },
-    "comment" : {
-      "undefined" : "Represents an Airbus A380 aircraft model."
-    },
-    "id" : "43",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_777-200Lr",
-    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "instances" : 0,
-    "annotations" : {
-      "sameAs" : [ {
-        "identifier" : "sameAs",
-        "language" : "undefined",
-        "value" : "https://dbpedia.org/page/Boeing_777",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Boeing_777-200Lr",
-      "undefined" : "Boeing_777-200LR"
-    },
-    "comment" : {
-      "undefined" : "Represents a specific variant of the Boeing 777 aircraft, the Boeing 777-200LR model."
-    },
-    "id" : "45",
-    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
@@ -514,7 +493,7 @@
     "comment" : {
       "undefined" : "Represents the airline company Ryanair."
     },
-    "id" : "35",
+    "id" : "44",
     "superClasses" : [ "11" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Date",
@@ -527,7 +506,7 @@
     "comment" : {
       "undefined" : "Represents the date of a flight."
     },
-    "id" : "20",
+    "id" : "22",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#StaffRating",
@@ -540,23 +519,23 @@
     "comment" : {
       "undefined" : "Represents the rating given to the cabin staff of an airline."
     },
-    "id" : "53",
-    "superClasses" : [ "16" ]
+    "id" : "59",
+    "superClasses" : [ "17" ]
   }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_737",
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
     "instances" : 0,
     "annotations" : {
       "sameAs" : [ {
         "identifier" : "sameAs",
         "language" : "undefined",
-        "value" : "https://dbpedia.org/page/Boeing_737",
+        "value" : "https://dbpedia.org/page/Boeing737",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "Boeing_737",
-      "undefined" : "Boeing_737"
+      "IRI-based" : "Boeing737",
+      "undefined" : "Boeing737"
     },
     "individuals" : [ {
       "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737_1",
@@ -568,7 +547,28 @@
     "comment" : {
       "undefined" : "Represents a Boeing 737 aircraft model."
     },
-    "id" : "44",
+    "id" : "50",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/AirbusA380",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AirbusA380",
+      "undefined" : "AirbusA380"
+    },
+    "comment" : {
+      "undefined" : "Represents an Airbus A380 aircraft model."
+    },
+    "id" : "51",
     "superClasses" : [ "13" ]
   } ],
   "property" : [ {
@@ -578,37 +578,31 @@
     "id" : "5",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "15",
+    "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "18",
+    "id" : "20",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "19",
+    "id" : "21",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "17",
-    "type" : "owl:objectProperty"
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "25",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "27",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "29",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "31",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "33",
-    "type" : "rdfs:SubClassOf"
+    "id" : "19",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "34",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "38",
@@ -617,47 +611,44 @@
     "id" : "39",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "40",
+    "id" : "41",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "46",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "48",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "23",
+    "id" : "18",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "51",
-    "type" : "owl:disjointWith"
+    "id" : "28",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "52",
-    "type" : "rdf:Property"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "24",
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "55",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "56",
-    "type" : "owl:disjointWith"
   }, {
     "id" : "57",
     "type" : "owl:disjointWith"
   }, {
     "id" : "58",
-    "type" : "owl:disjointWith"
+    "type" : "rdf:Property"
   }, {
-    "id" : "59",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "60",
-    "type" : "owl:disjointWith"
+    "id" : "33",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "61",
     "type" : "owl:disjointWith"
@@ -672,22 +663,25 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "65",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "66",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "67",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "68",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "69",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "70",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "71",
     "type" : "rdfs:SubClassOf"
@@ -695,19 +689,43 @@
     "id" : "72",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "73",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "74",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "75",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "76",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
@@ -731,44 +749,34 @@
     "id" : "5"
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff",
+    "inverse" : "18",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "range" : "16",
+    "range" : "17",
     "label" : {
       "IRI-based" : "hasCabinStaff",
       "undefined" : "hasCabinStaff"
     },
-    "superproperty" : [ "17" ],
+    "superproperty" : [ "19" ],
     "domain" : "4",
     "comment" : {
       "undefined" : "This property relates a flight to the cabin staff."
     },
     "attributes" : [ "object" ],
-    "id" : "15"
+    "id" : "16"
   }, {
     "range" : "4",
     "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "18"
+    "id" : "20"
   }, {
     "range" : "4",
-    "domain" : "20",
+    "domain" : "22",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "19"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "topObjectProperty"
-    },
-    "domain" : "21",
-    "subproperty" : [ "15", "22", "23", "24" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "17"
+    "id" : "21"
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "range" : "26",
+    "range" : "24",
     "label" : {
       "IRI-based" : "hasComment",
       "undefined" : "hasComment"
@@ -778,11 +786,37 @@
       "undefined" : "Represents the comment of the flight rating."
     },
     "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isPassenger",
+      "undefined" : "isPassenger"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "This property indicates the flight of a passenger."
+    },
+    "attributes" : [ "object" ],
     "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "26",
+    "subproperty" : [ "27", "28", "18", "29", "16", "25", "30", "31", "32", "33" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "range" : "28",
+    "range" : "35",
     "label" : {
       "IRI-based" : "hasFoodandBeverages",
       "undefined" : "hasFoodandBeverages"
@@ -792,239 +826,322 @@
       "undefined" : "Represents the rating of food and beverages of the flight."
     },
     "attributes" : [ "datatype" ],
-    "id" : "27"
-  }, {
-    "range" : "11",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
-  }, {
-    "range" : "1",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "31"
-  }, {
-    "range" : "4",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
-  }, {
-    "range" : "11",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
-    "range" : "10",
-    "domain" : "13",
+    "range" : "1",
+    "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
     "id" : "36"
-  }, {
-    "range" : "10",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "38"
-  }, {
-    "range" : "1",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "39"
   }, {
     "range" : "1",
     "domain" : "0",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
+    "id" : "37"
   }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#has_company",
-    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "1",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "10",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
     "range" : "11",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "11",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "range" : "4",
     "label" : {
-      "IRI-based" : "has_company",
-      "undefined" : "hasCompany"
+      "IRI-based" : "isAircraft",
+      "undefined" : "isAircraft"
     },
-    "superproperty" : [ "17" ],
-    "domain" : "4",
+    "superproperty" : [ "19" ],
+    "domain" : "13",
     "comment" : {
-      "undefined" : "This property indicates which company is managing the flight."
+      "undefined" : "This property indicates in which flight the aircraft will be used."
     },
-    "attributes" : [ "asymmetric", "object" ],
-    "id" : "22"
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isCabinStaff",
+      "undefined" : "isCabinStaff"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "This property indicates in which flight works a person of the Cabin Staff."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isAirline",
+      "undefined" : "isAirline"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property indicates if the name of a company is an Airline."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
   }, {
     "range" : "10",
     "domain" : "11",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "46"
+    "id" : "52"
   }, {
     "range" : "10",
     "domain" : "4",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "48"
+    "id" : "54"
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger",
+    "inverse" : "25",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
     "range" : "9",
     "label" : {
       "IRI-based" : "hasPassenger",
       "undefined" : "hasPassenger"
     },
-    "superproperty" : [ "17" ],
+    "superproperty" : [ "19" ],
     "domain" : "4",
     "comment" : {
       "undefined" : "This property relates a flight to the passenger."
     },
     "attributes" : [ "object" ],
-    "id" : "23"
+    "id" : "32"
   }, {
-    "range" : "35",
-    "domain" : "30",
+    "range" : "44",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "51"
+    "id" : "57"
   }, {
-    "domain" : "35",
-    "range" : "35",
-    "id" : "52",
+    "domain" : "44",
+    "range" : "44",
+    "id" : "58",
     "label" : {
       "IRI-based" : "12",
       "undefined" : "is a"
     }
   }, {
     "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft",
+    "inverse" : "31",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
     "range" : "13",
     "label" : {
       "IRI-based" : "hasAircraft",
       "undefined" : "hasAircraft"
     },
-    "superproperty" : [ "17" ],
+    "superproperty" : [ "19" ],
     "domain" : "4",
     "comment" : {
       "undefined" : "This property indicates which aircraft will be used in the flight."
     },
     "attributes" : [ "asymmetric", "object" ],
-    "id" : "24"
+    "id" : "33"
   }, {
-    "range" : "45",
-    "domain" : "43",
+    "range" : "46",
+    "domain" : "51",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "55"
+    "id" : "61"
   }, {
-    "range" : "37",
-    "domain" : "44",
+    "range" : "48",
+    "domain" : "50",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
+    "id" : "62"
   }, {
-    "range" : "45",
-    "domain" : "44",
+    "range" : "46",
+    "domain" : "50",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "57"
+    "id" : "63"
   }, {
-    "range" : "45",
-    "domain" : "37",
+    "range" : "46",
+    "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
+    "id" : "64"
   }, {
     "range" : "9",
     "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "59"
-  }, {
-    "range" : "14",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
-  }, {
-    "range" : "0",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "61"
-  }, {
-    "range" : "0",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "62"
-  }, {
-    "range" : "44",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "63"
-  }, {
-    "range" : "37",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "64"
-  }, {
-    "range" : "6",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
-    "range" : "6",
-    "domain" : "54",
+    "range" : "15",
+    "domain" : "40",
     "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
-    "range" : "16",
-    "domain" : "53",
+    "range" : "0",
+    "domain" : "40",
     "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "50",
-    "label" : {
-      "IRI-based" : "topDataProperty"
-    },
-    "domain" : "21",
-    "attributes" : [ "external", "datatype" ],
+    "range" : "0",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
-    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue",
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName",
+    "inverse" : "28",
     "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
-    "range" : "47",
+    "range" : "11",
     "label" : {
-      "IRI-based" : "hasValue"
+      "IRI-based" : "hasAirlineName",
+      "undefined" : "hasAirlineName"
     },
-    "domain" : "54",
-    "attributes" : [ "datatype" ],
+    "superproperty" : [ "19" ],
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "This property indicates which is the name of the Airline."
+    },
+    "attributes" : [ "functional", "asymmetric", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "50",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
-    "range" : "13",
-    "domain" : "37",
+    "range" : "48",
+    "domain" : "51",
     "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
-    "range" : "13",
-    "domain" : "45",
+    "range" : "6",
+    "domain" : "49",
     "attributes" : [ "anonymous", "object" ],
     "id" : "71"
   }, {
-    "range" : "9",
-    "domain" : "49",
+    "range" : "6",
+    "domain" : "60",
     "attributes" : [ "anonymous", "object" ],
     "id" : "72"
   }, {
-    "range" : "9",
-    "domain" : "8",
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany",
+    "inverse" : "29",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasCompany",
+      "undefined" : "hasCompany"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "This property indicates which company is managing the flight."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "operatesFlight",
+      "undefined" : "operatesFlight"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property indicates which flight a company is managing."
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "range" : "17",
+    "domain" : "59",
     "attributes" : [ "anonymous", "object" ],
     "id" : "73"
   }, {
-    "range" : "12",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "26",
+    "attributes" : [ "external", "datatype" ],
     "id" : "74"
   }, {
-    "range" : "4",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue",
+    "baseIri" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "60",
+    "comment" : {
+      "undefined" : "Represents the general rating of the flight."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "75"
   }, {
     "range" : "13",
-    "domain" : "44",
+    "domain" : "51",
     "attributes" : [ "anonymous", "object" ],
     "id" : "76"
   }, {
     "range" : "13",
-    "domain" : "43",
+    "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
     "id" : "77"
+  }, {
+    "range" : "9",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "12",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "4",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "13",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "13",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
   } ]
 }

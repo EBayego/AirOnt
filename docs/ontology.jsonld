@@ -62,7 +62,7 @@
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#has_company"
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -73,13 +73,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airbus_A380"
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380"
     }, {
-      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_737"
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737"
     }, {
-      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_737-800"
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800"
     }, {
-      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_777-200Lr"
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR"
     } ]
   } ]
 }, {
@@ -129,16 +129,16 @@
   "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
 }, {
-  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airbus_A380",
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents an Airbus A380 aircraft model."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Airbus_A380"
+    "@value" : "AirbusA380"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
-    "@value" : "https://dbpedia.org/page/Airbus_A380"
+    "@value" : "https://dbpedia.org/page/AirbusA380"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft"
@@ -168,49 +168,49 @@
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_737"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_737",
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents a Boeing 737 aircraft model."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boeing_737"
+    "@value" : "Boeing737"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
-    "@value" : "https://dbpedia.org/page/Boeing_737"
+    "@value" : "https://dbpedia.org/page/Boeing737"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_737-800",
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents a specific variant of the Boeing 737 aircraft, the Boeing 737-800 model."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boeing_737-800"
+    "@value" : "Boeing737-800"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
-    "@value" : "https://es.dbpedia.org/page/Boeing_737_Next_Generation"
+    "@value" : "https://es.dbpedia.org/page/Boeing737_Next_Generation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing_777-200Lr",
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents a specific variant of the Boeing 777 aircraft, the Boeing 777-200LR model."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boeing_777-200LR"
+    "@value" : "Boeing777-200LR"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
     "@value" : "https://dbpedia.org/page/Boeing_777"
@@ -291,15 +291,15 @@
   "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment" : [ {
     "@value" : "Another good affordable flight with Ryanair. On time, pleasant staff at check-in and on board. We use Ryanair as our first choice on every flight we take."
   } ],
+  "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair"
+  } ],
   "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass1"
   } ],
   "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "7.0"
-  } ],
-  "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#has_company" : [ {
-    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
@@ -313,15 +313,15 @@
   "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment" : [ {
     "@value" : "My last travel in January 2024 the food quality and presentation had deteriorated and the service. During  booking one has to pay for seats in case one does not want to wait until check-in. On the first leg the crew mechanically did their job. It is ok, but not what you expect from Qatar Airways. Amenity kits are not provided any longer on every flight during the night. Nonetheless you sometimes still find the old welcoming and service oriented Qatar Airways spirit. The crew on the second leg was outstanding as well as ground staff at JRO. Flying Qatar Airways is still a good value for money, but it was not the extraordinary experience."
   } ],
+  "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar"
+  } ],
   "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "8.4"
   } ],
   "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass2"
-  } ],
-  "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#has_company" : [ {
-    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
@@ -435,16 +435,16 @@
   "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar_Airways"
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar_Airways",
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents the airline company Qatar Airways."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Qatar_Airways"
+    "@value" : "QatarAirways"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName"
@@ -547,6 +547,30 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates which is the name of the Airline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasAirlineName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff",
@@ -565,6 +589,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment",
@@ -583,6 +610,27 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates which company is managing the flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages",
@@ -619,6 +667,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort",
@@ -641,8 +692,14 @@
 }, {
   "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the general rating of the flight."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid11"
@@ -651,19 +708,94 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#has_company",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "This property indicates which company is managing the flight."
+    "@value" : "This property indicates in which flight the aircraft will be used."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasCompany"
+    "@value" : "isAircraft"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates if the name of a company is an Airline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isAirline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates in which flight works a person of the Cabin Staff."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isCabinStaff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates the flight of a passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isPassenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates which flight a company is managing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "operatesFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"

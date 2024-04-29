@@ -7,11 +7,20 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology">
     <Prefix name="" IRI="http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal>https://creativecommons.org/licenses/by/4.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal>Airline Ontology</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#AirbusA380"/>
     </Declaration>
@@ -154,7 +163,10 @@
         <NamedIndividual IRI="#Ryanair"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="#license"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
@@ -590,6 +602,79 @@
             </FacetRestriction>
         </DatatypeRestriction>
     </DataPropertyRange>
+	<DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#OverallRating"/>
+                <Variable IRI="urn:swrl:var#o"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="urn:swrl:var#o"/>
+                <Variable IRI="urn:swrl:var#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighSatisfaction"/>
+                <Variable IRI="urn:swrl:var#o"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#OverallRating"/>
+                <Variable IRI="urn:swrl:var#o"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="urn:swrl:var#o"/>
+                <Variable IRI="urn:swrl:var#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighSatisfaction"/>
+                <Variable IRI="urn:swrl:var#o"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#OverallRating"/>
+                <Variable IRI="urn:swrl:var#o"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="urn:swrl:var#o"/>
+                <Variable IRI="urn:swrl:var#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#LowSatisfaction"/>
+                <Variable IRI="urn:swrl:var#o"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AirbusA380</IRI>
