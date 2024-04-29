@@ -25,9 +25,9 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/license -->
+    <!-- http://purl.org/dc/elements/1.1/rights -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
     
 
 
@@ -650,7 +650,7 @@
         <rdfs:sameAs>https://dbpedia.org/page/Ryanair</rdfs:sameAs>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
+        <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
     </rdf:Description>
     
 
