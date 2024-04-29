@@ -10,7 +10,6 @@
      xmlns:AirlineOntology="http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology/1.0.1"/>
-        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
     </owl:Ontology>
     
 
@@ -649,6 +648,9 @@
         <rdfs:comment>Represents the airline company Ryanair.</rdfs:comment>
         <rdfs:label>Ryanair</rdfs:label>
         <rdfs:sameAs>https://dbpedia.org/page/Ryanair</rdfs:sameAs>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
     </rdf:Description>
     
 
