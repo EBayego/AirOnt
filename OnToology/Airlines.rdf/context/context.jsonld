@@ -1,0 +1,154 @@
+{
+  "@context" : {
+    "CompanyName" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName"
+    },
+    "TypeOfTraveller" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#TypeOfTraveller"
+    },
+    "isCabinStaff" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff",
+      "@type" : "@id"
+    },
+    "isAircraft" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft",
+      "@type" : "@id"
+    },
+    "LowSatisfaction" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#LowSatisfaction"
+    },
+    "StaffRating" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#StaffRating"
+    },
+    "hasAircraft" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasValue" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue"
+    },
+    "hasComment" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AirbusA380" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "HighSatisfaction" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#HighSatisfaction"
+    },
+    "OverallRating" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating"
+    },
+    "Destination" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Destination"
+    },
+    "Origin" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Origin"
+    },
+    "ValueForMoney" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#ValueForMoney"
+    },
+    "Boeing737" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737"
+    },
+    "Date" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Date"
+    },
+    "operatesFlight" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight",
+      "@type" : "@id"
+    },
+    "MediumSatisfaction" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#MediumSatisfaction"
+    },
+    "Boeing777-200LR" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "QatarAirways" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways"
+    },
+    "hasCompany" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany",
+      "@type" : "@id"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft"
+    },
+    "Ryanair" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair"
+    },
+    "hasCabinStaff" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff",
+      "@type" : "@id"
+    },
+    "FlightSatisfaction" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction"
+    },
+    "hasSeatComfort" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort"
+    },
+    "Staff" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline"
+    },
+    "FlightRating" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight"
+    },
+    "CabinStaff" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff"
+    },
+    "isAirline" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline",
+      "@type" : "@id"
+    },
+    "hasFoodandBeverages" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Boeing737-800" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800"
+    },
+    "SeatType" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#SeatType"
+    },
+    "hasAirlineName" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName",
+      "@type" : "@id"
+    },
+    "isPassenger" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger",
+      "@type" : "@id"
+    },
+    "hasPassenger" : {
+      "@id" : "http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger",
+      "@type" : "@id"
+    }
+  }
+}
