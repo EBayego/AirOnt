@@ -13,7 +13,7 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Airbus_A380"/>
+        <Class IRI="#AirbusA380"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Aircraft"/>
@@ -22,13 +22,13 @@
         <Class IRI="#Airline"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Boeing_737"/>
+        <Class IRI="#Boeing737"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Boeing_737-800"/>
+        <Class IRI="#Boeing737-800"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Boeing_777-200Lr"/>
+        <Class IRI="#Boeing777-200LR"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CabinStaff"/>
@@ -70,7 +70,7 @@
         <Class IRI="#Passenger"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Qatar_Airways"/>
+        <Class IRI="#QatarAirways"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ryanair"/>
@@ -94,13 +94,31 @@
         <ObjectProperty IRI="#hasAircraft"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasAirlineName"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasCabinStaff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompany"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPassenger"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_company"/>
+        <ObjectProperty IRI="#isAircraft"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAirline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCabinStaff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPassenger"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatesFlight"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasComment"/>
@@ -136,10 +154,13 @@
         <NamedIndividual IRI="#Ryanair"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="#license"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Airbus_A380"/>
+        <Class IRI="#AirbusA380"/>
         <Class IRI="#Aircraft"/>
     </SubClassOf>
     <SubClassOf>
@@ -147,15 +168,15 @@
         <Class IRI="#Airline"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Boeing_737"/>
+        <Class IRI="#Boeing737"/>
         <Class IRI="#Aircraft"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Boeing_737-800"/>
+        <Class IRI="#Boeing737-800"/>
         <Class IRI="#Aircraft"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Boeing_777-200Lr"/>
+        <Class IRI="#Boeing777-200LR"/>
         <Class IRI="#Aircraft"/>
     </SubClassOf>
     <SubClassOf>
@@ -188,7 +209,7 @@
     <SubClassOf>
         <Class IRI="#Flight"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#has_company"/>
+            <ObjectProperty IRI="#hasCompany"/>
             <Class IRI="#CompanyName"/>
         </ObjectExactCardinality>
     </SubClassOf>
@@ -221,7 +242,7 @@
         <Class IRI="#FlightRating"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Qatar_Airways"/>
+        <Class IRI="#QatarAirways"/>
         <Class IRI="#CompanyName"/>
     </SubClassOf>
     <SubClassOf>
@@ -249,10 +270,10 @@
         <Class IRI="#FlightRating"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Airbus_A380"/>
-        <Class IRI="#Boeing_737"/>
-        <Class IRI="#Boeing_737-800"/>
-        <Class IRI="#Boeing_777-200Lr"/>
+        <Class IRI="#AirbusA380"/>
+        <Class IRI="#Boeing737"/>
+        <Class IRI="#Boeing737-800"/>
+        <Class IRI="#Boeing777-200LR"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Airline"/>
@@ -264,11 +285,11 @@
         <Class IRI="#MediumSatisfaction"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Qatar_Airways"/>
+        <Class IRI="#QatarAirways"/>
         <Class IRI="#Ryanair"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Boeing_737"/>
+        <Class IRI="#Boeing737"/>
         <NamedIndividual IRI="#Boeing737_1"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -288,7 +309,7 @@
         <NamedIndividual IRI="#Pass2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Qatar_Airways"/>
+        <Class IRI="#QatarAirways"/>
         <NamedIndividual IRI="#Qatar"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -301,14 +322,14 @@
         <NamedIndividual IRI="#Boeing737_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Flight1"/>
+        <NamedIndividual IRI="#Ryanair"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPassenger"/>
         <NamedIndividual IRI="#Flight1"/>
         <NamedIndividual IRI="#Pass1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_company"/>
-        <NamedIndividual IRI="#Flight1"/>
-        <NamedIndividual IRI="#Ryanair"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAircraft"/>
@@ -316,14 +337,14 @@
         <NamedIndividual IRI="#Boeing737_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Flight2"/>
+        <NamedIndividual IRI="#Qatar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPassenger"/>
         <NamedIndividual IRI="#Flight2"/>
         <NamedIndividual IRI="#Pass2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_company"/>
-        <NamedIndividual IRI="#Flight2"/>
-        <NamedIndividual IRI="#Qatar"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasComment"/>
@@ -350,7 +371,15 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAirlineName"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCabinStaff"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCompany"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -358,21 +387,71 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#has_company"/>
+        <ObjectProperty IRI="#isAircraft"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAirline"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCabinStaff"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPassenger"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#operatesFlight"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAircraft"/>
+        <ObjectProperty IRI="#isAircraft"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAirlineName"/>
+        <ObjectProperty IRI="#isAirline"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCabinStaff"/>
+        <ObjectProperty IRI="#isCabinStaff"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCompany"/>
+        <ObjectProperty IRI="#operatesFlight"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPassenger"/>
+        <ObjectProperty IRI="#isPassenger"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAirlineName"/>
+    </FunctionalObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasAircraft"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#has_company"/>
+        <ObjectProperty IRI="#hasAirlineName"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasCompany"/>
     </AsymmetricObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAircraft"/>
         <Class IRI="#Flight"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAirlineName"/>
+        <Class IRI="#Airline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCabinStaff"/>
+        <Class IRI="#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompany"/>
         <Class IRI="#Flight"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -380,24 +459,64 @@
         <Class IRI="#Flight"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_company"/>
-        <Class IRI="#Flight"/>
+        <ObjectProperty IRI="#isAircraft"/>
+        <Class IRI="#Aircraft"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAirline"/>
+        <Class IRI="#CompanyName"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCabinStaff"/>
+        <Class IRI="#CabinStaff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPassenger"/>
+        <Class IRI="#Passenger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#operatesFlight"/>
+        <Class IRI="#CompanyName"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAircraft"/>
         <Class IRI="#Aircraft"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirlineName"/>
+        <Class IRI="#CompanyName"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCabinStaff"/>
         <Class IRI="#CabinStaff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCompany"/>
+        <Class IRI="#CompanyName"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPassenger"/>
         <Class IRI="#Passenger"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_company"/>
-        <Class IRI="#CompanyName"/>
+        <ObjectProperty IRI="#isAircraft"/>
+        <Class IRI="#Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAirline"/>
+        <Class IRI="#Airline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCabinStaff"/>
+        <Class IRI="#Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPassenger"/>
+        <Class IRI="#Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#operatesFlight"/>
+        <Class IRI="#Flight"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasComment"/>
@@ -473,18 +592,18 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Airbus_A380</IRI>
+        <IRI>#AirbusA380</IRI>
         <Literal>Represents an Airbus A380 aircraft model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Airbus_A380</IRI>
-        <Literal>Airbus_A380</Literal>
+        <IRI>#AirbusA380</IRI>
+        <Literal>AirbusA380</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Airbus_A380</IRI>
-        <Literal>https://dbpedia.org/page/Airbus_A380</Literal>
+        <IRI>#AirbusA380</IRI>
+        <Literal>https://dbpedia.org/page/AirbusA380</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -508,47 +627,47 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Boeing_737</IRI>
+        <IRI>#Boeing737</IRI>
         <Literal>Represents a Boeing 737 aircraft model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Boeing_737</IRI>
-        <Literal>Boeing_737</Literal>
+        <IRI>#Boeing737</IRI>
+        <Literal>Boeing737</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Boeing_737</IRI>
-        <Literal>https://dbpedia.org/page/Boeing_737</Literal>
+        <IRI>#Boeing737</IRI>
+        <Literal>https://dbpedia.org/page/Boeing737</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Boeing_737-800</IRI>
+        <IRI>#Boeing737-800</IRI>
         <Literal>Represents a specific variant of the Boeing 737 aircraft, the Boeing 737-800 model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Boeing_737-800</IRI>
-        <Literal>Boeing_737-800</Literal>
+        <IRI>#Boeing737-800</IRI>
+        <Literal>Boeing737-800</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Boeing_737-800</IRI>
-        <Literal>https://es.dbpedia.org/page/Boeing_737_Next_Generation</Literal>
+        <IRI>#Boeing737-800</IRI>
+        <Literal>https://es.dbpedia.org/page/Boeing737_Next_Generation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Boeing_777-200Lr</IRI>
+        <IRI>#Boeing777-200LR</IRI>
         <Literal>Represents a specific variant of the Boeing 777 aircraft, the Boeing 777-200LR model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Boeing_777-200Lr</IRI>
-        <Literal>Boeing_777-200LR</Literal>
+        <IRI>#Boeing777-200LR</IRI>
+        <Literal>Boeing777-200LR</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Boeing_777-200Lr</IRI>
+        <IRI>#Boeing777-200LR</IRI>
         <Literal>https://dbpedia.org/page/Boeing_777</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -683,13 +802,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Qatar_Airways</IRI>
+        <IRI>#QatarAirways</IRI>
         <Literal>Represents the airline company Qatar Airways.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Qatar_Airways</IRI>
-        <Literal>Qatar_Airways</Literal>
+        <IRI>#QatarAirways</IRI>
+        <Literal>QatarAirways</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -768,6 +887,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAirlineName</IRI>
+        <Literal>This property indicates which is the name of the Airline.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAirlineName</IRI>
+        <Literal>hasAirlineName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasCabinStaff</IRI>
         <Literal>This property relates a flight to the cabin staff.</Literal>
     </AnnotationAssertion>
@@ -785,6 +914,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasComment</IRI>
         <Literal>hasComment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCompany</IRI>
+        <Literal>This property indicates which company is managing the flight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCompany</IRI>
+        <Literal>hasCompany</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -818,13 +957,63 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#has_company</IRI>
-        <Literal>This property indicates which company is managing the flight.</Literal>
+        <IRI>#hasValue</IRI>
+        <Literal>Represents the general rating of the flight.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#has_company</IRI>
-        <Literal>hasCompany</Literal>
+        <IRI>#hasValue</IRI>
+        <Literal>hasValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAircraft</IRI>
+        <Literal>This property indicates in which flight the aircraft will be used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAircraft</IRI>
+        <Literal>isAircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAirline</IRI>
+        <Literal>This property indicates if the name of a company is an Airline.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAirline</IRI>
+        <Literal>isAirline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCabinStaff</IRI>
+        <Literal>This property indicates in which flight works a person of the Cabin Staff.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCabinStaff</IRI>
+        <Literal>isCabinStaff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPassenger</IRI>
+        <Literal>This property indicates the flight of a passenger.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPassenger</IRI>
+        <Literal>isPassenger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#operatesFlight</IRI>
+        <Literal>This property indicates which flight a company is managing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#operatesFlight</IRI>
+        <Literal>operatesFlight</Literal>
     </AnnotationAssertion>
 </Ontology>
 
