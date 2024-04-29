@@ -1,0 +1,465 @@
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology/1.0.1> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates which aircraft will be used in the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "hasAircraft" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates which is the name of the Airline." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#label> "hasAirlineName" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a flight to the cabin staff." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCabinStaff> <http://www.w3.org/2000/01/rdf-schema#label> "hasCabinStaff" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates which company is managing the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.w3.org/2000/01/rdf-schema#label> "hasCompany" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a flight to the passenger." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "hasPassenger" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates in which flight the aircraft will be used." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "isAircraft" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates if the name of a company is an Airline." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isAirline> <http://www.w3.org/2000/01/rdf-schema#label> "isAirline" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates in which flight works a person of the Cabin Staff." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isCabinStaff> <http://www.w3.org/2000/01/rdf-schema#label> "isCabinStaff" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the flight of a passenger." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#isPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "isPassenger" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates which flight a company is managing." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#operatesFlight> <http://www.w3.org/2000/01/rdf-schema#label> "operatesFlight" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the comment of the flight rating." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment> <http://www.w3.org/2000/01/rdf-schema#label> "hasComment" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the rating of food and beverages of the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "hasFoodandBeverages" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the rating of the quality of the seats." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeatComfort" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the general rating of the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an Airbus A380 aircraft model." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380> <http://www.w3.org/2000/01/rdf-schema#label> "AirbusA380" .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/AirbusA380" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an aircraft used in the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a Boeing 737 aircraft model." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing737" .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Boeing737" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a specific variant of the Boeing 737 aircraft, the Boeing 737-800 model." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing737-800" .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/Boeing737_Next_Generation" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a specific variant of the Boeing 777 aircraft, the Boeing 777-200LR model." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing777-200LR" .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Boeing_777" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the cabin crew members of an airline." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff> <http://www.w3.org/2000/01/rdf-schema#label> "CabinStaff" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the name of the airline company." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> <http://www.w3.org/2000/01/rdf-schema#label> "CompanyName" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Date
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Date> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Date> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the date of a flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Date> <http://www.w3.org/2000/01/rdf-schema#label> "Date" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Destination
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Destination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the destination airport of a flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Aircraft> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a flight operated by an airline." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the rating associated with a flight experience" .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> <http://www.w3.org/2000/01/rdf-schema#label> "FlightRating" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the satisfaction level of the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "FlightSatisfaction" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#HighSatisfaction
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#HighSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#HighSatisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#HighSatisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a high level of satisfaction of the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#HighSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "HighSatisfaction" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#LowSatisfaction
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#LowSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#LowSatisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#LowSatisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a low level of satisfaction of the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#LowSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "LowSatisfaction" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#MediumSatisfaction
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#MediumSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#MediumSatisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightSatisfaction> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#MediumSatisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a medium level of satisfaction of the flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#MediumSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "MediumSatisfaction" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Origin
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the origin airport of a flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the overall rating of a flight experience." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#OverallRating> <http://www.w3.org/2000/01/rdf-schema#label> "OverallRating" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger traveling on a flight." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the airline company Qatar Airways." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways> <http://www.w3.org/2000/01/rdf-schema#label> "QatarAirways" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CompanyName> .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#SeatType
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the type of seat booked by a passenger (for example, economy class, first class...)" .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "SeatType" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Airline> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the staff members of an airline." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#StaffRating
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#StaffRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#StaffRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#CabinStaff> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#StaffRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the rating given to the cabin staff of an airline." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#StaffRating> <http://www.w3.org/2000/01/rdf-schema#label> "StaffRating" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#TypeOfTraveller
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#TypeOfTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the type or category of the passenger (for example business, leisure...)" .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#label> "TypeOfTraveller" .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#ValueForMoney
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#ValueForMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#FlightRating> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the rating of value for money aspect of a flight experience." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#label> "ValueForMoney" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737_1
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737> .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight1
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight1> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737_1> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight1> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight1> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass1> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight1> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment> "Another good affordable flight with Ryanair. On time, pleasant staff at check-in and on board. We use Ryanair as our first choice on every flight we take." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight1> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasSeatComfort> "7.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight2
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight2> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasAircraft> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737_1> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight2> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasCompany> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight2> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasPassenger> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass2> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight2> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasComment> "My last travel in January 2024 the food quality and presentation had deteriorated and the service. During  booking one has to pay for seats in case one does not want to wait until check-in. On the first leg the crew mechanically did their job. It is ok, but not what you expect from Qatar Airways. Amenity kits are not provided any longer on every flight during the night. Nonetheless you sometimes still find the old welcoming and service oriented Qatar Airways spirit. The crew on the second leg was outstanding as well as ground staff at JRO. Flying Qatar Airways is still a good value for money, but it was not the extraordinary experience." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Flight2> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#hasFoodandBeverages> "8.4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass1
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass2
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Pass2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Passenger> .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#QatarAirways> .
+# 
+# http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the airline company Ryanair." .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> <http://www.w3.org/2000/01/rdf-schema#label> "Ryanair" .
+<http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Ryanair> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Ryanair" .
+# 
+<http://www.w3.org/2002/07/owl#Thing> <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0/" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid18 <http://www.w3.org/2002/07/owl#members> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing777-200LR> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737-800> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#Boeing737> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#AirbusA380> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid23 <http://www.w3.org/2002/07/owl#members> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#MediumSatisfaction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#LowSatisfaction> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology#HighSatisfaction> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
