@@ -11,6 +11,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/edu/ontologies/2024/3/AirlineOntology/1.0.1"/>
         <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>Airline Ontology</dc:title>
     </owl:Ontology>
     
 
@@ -29,6 +30,12 @@
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
